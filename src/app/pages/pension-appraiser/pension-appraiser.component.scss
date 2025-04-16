@@ -1,0 +1,46 @@
+.appraiser-container {
+    display: grid;
+    grid-template-columns: 26% 1fr;
+    height: 100vh;
+    align-items: center;
+  }
+
+.appraiser-container-item{
+  height: 100px;
+  -webkit-box-shadow: inset -15px -4px 13px -4px rgba(188,189,194,0.13);
+  -moz-box-shadow: inset -15px -4px 13px -4px rgba(188,189,194,0.13);
+  box-shadow: inset -15px -4px 13px -4px rgba(188,189,194,0.13);
+  
+}
+
+
+.appraiser-container-one{
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border-top: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+  border-bottom: 1px solid #b3b3b34f;
+  height: max-content;
+}
+
+.radius-top{
+  border-top-left-radius: 24px;
+}
+
+.radius-bottom{
+  border-bottom-left-radius: 24px;
+}
+
+.content{
+  border: 2px solid #d9d9d991;
+  border-radius: 5px;
+  height: 95vh;
+}
+
+.b1{
+  border-bottom: 1px solid #ebebeb91;
+}
+
+.active{
+  background: #c5c8ff;
+}
