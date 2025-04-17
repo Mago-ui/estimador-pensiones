@@ -7,7 +7,7 @@
             <div (click)="HandleChangeContent(4)"  [ngClass]="{ 'active': value === 4 }" class="appraiser-container-item b1">mis datos</div> 
             <div (click)="HandleChangeContent(5)"  [ngClass]="{ 'active': value === 5 }" class="appraiser-container-item radius-bottom">mis datos</div> 
         </div>
-        <ng-template [ngIf]="value == 2">
+        <ng-template [ngIf]="value == 1">
             <app-my-data class="content"></app-my-data>
         </ng-template>
     </div>

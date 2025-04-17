@@ -1,3 +1,163 @@
 <div class="my-data">
+    <form [formGroup]="dataForm" class="m-4">
+        <div class="row mb-2">
+            <div class="col-sm-12">
+              <div class="d-flex flex-column">
+                <label *ngIf="mostrarAlerta" for="lblTexto" style="border: 1px solid red; background-color: #ffe6e6; padding: 10px; border-radius: 4px;">
+                    <i class="bi bi-x-octagon"></i>
+                    Ingrese los campos obligatorios marcados con (*)
+                  </label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row mt-3">
+                <div class="col-sm-12">
+                    <div style="background-color: #e6f0ff; border: 1px solid #b3d1ff; padding: 15px; border-radius: 5px;">
+                        <div class="d-flex align-items-center">
+                            <label for="lblNombres" class="me-2" style="min-width: 150px; color: blue; font-weight: bold;">Nombres y Apellidos:</label>
+                            <input formControlName="Nombre" type="text" class="form-control ClGray"  style="width: 500px; height: 25px;"/>
+                        </div>
+                    </div>    
+                </div>
+           </div>
 
+           <div class="row mt-3">
+                <div class="col-sm-12">
+                    <div style=" padding: 15px; border-radius: 5px;">
+                        <div class="d-flex align-items-center">
+                            <label for="lblNacimiento" class="me-2" style="min-width: 165px; color: blue; font-weight: bold;">Fecha Nacimiento:</label>
+                            <nz-select formControlName="dia" style="margin-left: 20px; width: 60px;">
+                                <nz-option nzValue="1" nzLabel="1"></nz-option>
+                                <nz-option nzValue="2" nzLabel="2"></nz-option>
+                                <nz-option nzValue="3" nzLabel="3"></nz-option>
+                                <nz-option nzValue="4" nzLabel="4"></nz-option>
+                                <nz-option nzValue="5" nzLabel="5"></nz-option>
+                                <nz-option nzValue="6" nzLabel="6"></nz-option>
+                                <nz-option nzValue="7" nzLabel="7"></nz-option>
+                                <nz-option nzValue="8" nzLabel="8"></nz-option>
+                                <nz-option nzValue="9" nzLabel="9"></nz-option>
+                                <nz-option nzValue="10" nzLabel="10"></nz-option>
+                                
+                            </nz-select>
+
+                            <nz-select formControlName="mes" style="margin-left: 20px; width: 120px;">
+                                <nz-option nzValue="Enero" nzLabel="Enero"></nz-option>
+                                <nz-option nzValue="Febrero" nzLabel="Febrero"></nz-option>
+                                <nz-option nzValue="Marzo" nzLabel="Marzo"></nz-option>
+                                <nz-option nzValue="Abril" nzLabel="Abril"></nz-option>
+                                <nz-option nzValue="Mayo" nzLabel="Mayo"></nz-option>
+                                <nz-option nzValue="Junio" nzLabel="Junio"></nz-option>
+                                <nz-option nzValue="Julio" nzLabel="Julio"></nz-option>
+                                <nz-option nzValue="Agosto" nzLabel="Agosto"></nz-option>
+                                <nz-option nzValue="Septiembre" nzLabel="Septiembre"></nz-option>
+                                <nz-option nzValue="Octubre" nzLabel="Octubre"></nz-option>
+                                <nz-option nzValue="Noviembre" nzLabel="Noviembre"></nz-option>
+                                <nz-option nzValue="Diciembre" nzLabel="Diciembre"></nz-option>
+                                
+                            </nz-select>
+
+                            <nz-select formControlName="anio" style="margin-left: 20px; width: 80px;">
+                                <nz-option nzValue="1990" nzLabel="1990"></nz-option>
+                                    <nz-option nzValue="1991" nzLabel="1991"></nz-option>
+                                    <nz-option nzValue="1992" nzLabel="1992"></nz-option>
+                                    <nz-option nzValue="1993" nzLabel="1993"></nz-option>
+                                    <nz-option nzValue="1994" nzLabel="1994"></nz-option>
+                                    <nz-option nzValue="1995" nzLabel="1995"></nz-option>
+                                    <nz-option nzValue="1996" nzLabel="1996"></nz-option>
+                                    <nz-option nzValue="1997" nzLabel="1997"></nz-option>
+                                    <nz-option nzValue="1998" nzLabel="1998"></nz-option>
+                                    <nz-option nzValue="1999" nzLabel="1999"></nz-option>
+                                    <nz-option nzValue="2000" nzLabel="2000"></nz-option>
+                               
+                            </nz-select>
+
+                            <label for="lblEdad" class="me-2" style="min-width: 165px; color: blue; font-weight: bold; margin-left: 20px;">Hoy tengo 43 años</label>
+                        </div>
+
+                         <!-- Label debajo del día -->
+                        <label for="lblDia" class="mt-3" style="margin-left: 208px;">Dia</label>
+                        <label for="lblMes" class="mt-3" style="margin-left: 88px;">Mes</label>
+                        <label for="lblAnio" class="mt-3" style="margin-left: 88px;">Año</label>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-sm-12">
+                  <div style="background-color: #e6f0ff; border: 1px solid #b3d1ff; padding: 15px; border-radius: 5px;">
+                    <div class="d-flex align-items-center">
+                      <label for="lblJubilare" class="me-2" style="min-width: 150px; color: blue; font-weight: bold; padding-right: 33px;">
+                        Me Jubilaré a los:
+                      </label>
+                      <nz-row nzGutter="8" style="flex: 1;">
+                        <nz-col nzSpan="12">
+                          <nz-slider 
+                            [nzMin]="1" 
+                            [nzMax]="20" 
+                            [(ngModel)]="edadRetiro"  
+                            formControlName="edadRetiro">
+                          </nz-slider>
+                        </nz-col>
+                        <nz-col nzSpan="4">
+                          <nz-input-number 
+                            [nzMin]="1" 
+                            [nzMax]="20" 
+                            [(ngModel)]="edadRetiro"  
+                            formControlName="edadRetiro">
+                          </nz-input-number>
+                        </nz-col>
+                      </nz-row>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="row mt-3">
+                <div class="col-sm-12">
+                    <div style=" padding: 15px; border-radius: 5px;">
+                        <div class="d-flex align-items-center">
+                            <label for="lblSexo" class="me-2" style="min-width: 165px; color: blue; font-weight: bold;">Sexo:</label>
+                            
+                            <nz-radio-group formControlName="genero">
+                                <label nz-radio  nzValue="Masculino">Masculino</label>
+                                <label nz-radio  nzValue="Femenino">Femenino</label>
+                              </nz-radio-group>
+                           
+                        </div>
+                    </div>    
+                </div>
+            </div>
+
+            
+            <div class="row mt-3">
+                <div class="col-sm-12">
+                    <div style=" padding: 15px; border-radius: 5px; background-color: #e6f0ff; border: 1px solid #b3d1ff; padding: 15px; border-radius: 5px;">
+                        <div class="d-flex align-items-center">
+                            <label for="lblSexo" class="me-2" style="min-width: 165px; color: blue; font-weight: bold;">Condicion de Salud:</label>
+                            
+                            <nz-radio-group formControlName="salud">
+                                <label nz-radio  nzValue="Sano">Sano</label>
+                                <label nz-radio  nzValue="Invalido">Ìnvalido</label>
+                              </nz-radio-group>
+                           
+                        </div>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-sm-12">
+                    <div style=" padding: 15px; padding-left: 950px; border-radius: 5px;">
+                        <button nz-button nzType="primary" (click)="onSiguiente()">Siguiente</button>
+                    </div>    
+                </div>
+            </div>
+
+           <pre>{{ dataForm.value | json }}</pre>
+       
+
+    </form>
 </div>
