@@ -1,14 +1,16 @@
 <div class="m-2">
     <div class="appraiser-container">
         <div class="appraiser-container-one">
-            <div (click)="HandleChangeContent(1)"  [ngClass]="{ 'active': value === 1 }" class="appraiser-container-item radius-top b1">mis datos</div> 
-            <div (click)="HandleChangeContent(2)"  [ngClass]="{ 'active': value === 2 }" class="appraiser-container-item b1">mis datos</div> 
+            <div (click)="HandleChangeContent(1)"  [ngClass]="{ 'active': value === 1 }" class="appraiser-container-item radius-top b1">Mis Datos</div> 
+            <div (click)="HandleChangeContent(2)"  [ngClass]="{ 'active': value === 2 }" class="appraiser-container-item b1">Mis Ahorros</div> 
             <div (click)="HandleChangeContent(3)"  [ngClass]="{ 'active': value === 3 }" class="appraiser-container-item b1">mis datos</div> 
             <div (click)="HandleChangeContent(4)"  [ngClass]="{ 'active': value === 4 }" class="appraiser-container-item b1">mis datos</div> 
             <div (click)="HandleChangeContent(5)"  [ngClass]="{ 'active': value === 5 }" class="appraiser-container-item radius-bottom">mis datos</div> 
         </div>
-        <ng-template [ngIf]="value == 1">
-            <app-my-data class="content"></app-my-data>
-        </ng-template>
+
+        
+            <app-my-data *ngIf="value == 1" class="content"></app-my-data>
+            <app-my-savings *ngIf="value == 2" class="content"></app-my-savings>
+        
     </div>
 </div>
