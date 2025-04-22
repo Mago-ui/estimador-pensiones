@@ -1,3 +1,118 @@
 <div class="my-data">
+    <form [formGroup]="dataForm" class="m-4">
+        <div class="row mb-2">
+            <div class="col-sm-12">
+              <div class="d-flex flex-column">
+                <label *ngIf="mostrarAlerta" for="lblTexto" class="cont">
+                    <i class="bi bi-x-octagon"></i>
+                    Ingrese los campos obligatorios marcados con (*)
+                  </label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row mt-3">
+                <div class="col-sm-12">
+                    <div class="back-cont">
+                        <div class="d-flex align-items-center">
+                            <label for="lblNombres" class="me-2" style="min-width: 150px; color: blue; font-weight: bold;">Nombres y Apellidos:</label>
+                            <input  formControlName="Nombre" type="text" class="custom-input" />
+                        </div>
+                    </div>    
+                </div>
+           </div>
 
+           <div class="row mt-3">
+                <div class="col-sm-12">
+                    <div style=" padding: 15px; border-radius: 5px;">
+                        <div class="d-flex align-items-center">
+                            <label for="lblNacimiento" class="me-2" style="min-width: 165px; color: blue; font-weight: bold;">Fecha Nacimiento:</label>
+                            <nz-date-picker
+                            formControlName="fechaCumple"
+                            class="custom-picker custom-disabled"
+                            class="custom-select w-100 "
+                   
+                            ></nz-date-picker>
+
+                            <label for="lblEdad" class="me-2" style="min-width: 165px; color: blue; font-weight: bold; margin-left: 20px;">
+                              Hoy tengo {{dataForm.get('edadToday')?.value}} años
+                            </label>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-sm-12">
+                  <div class="back-cont">
+                    <div class="d-flex align-items-center">
+                      <label for="lblJubilare" class="me-2" style="min-width: 150px; color: blue; font-weight: bold; padding-right: 33px;">
+                        Me Jubilaré a los:
+                      </label>
+                      <nz-row nzGutter="8" style="flex: 1;">
+                        <nz-col nzSpan="12">
+                          <nz-slider 
+                            [nzMin]="1" 
+                            [nzMax]="20" 
+                            [(ngModel)]="edadRetiro"  
+                            formControlName="edadRetiro">
+                          </nz-slider>
+                        </nz-col>
+                        <nz-col nzSpan="4">
+                          <nz-input-number 
+                            [nzMin]="1" 
+                            [nzMax]="20" 
+                            [(ngModel)]="edadRetiro"  
+                            formControlName="edadRetiro">
+                          </nz-input-number>
+                        </nz-col>
+                      </nz-row>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="row mt-3">
+                <div class="col-sm-12">
+                    <div style=" padding: 15px; border-radius: 5px;">
+                        <div class="d-flex align-items-center">
+                            <label for="lblSexo" class="me-2" style="min-width: 165px; color: blue; font-weight: bold;">Sexo:</label>
+                            
+                            <nz-radio-group formControlName="genero">
+                                <label nz-radio  nzValue="Masculino">Masculino</label>
+                                <label nz-radio  nzValue="Femenino">Femenino</label>
+                              </nz-radio-group>
+                           
+                        </div>
+                    </div>    
+                </div>
+            </div>
+
+            
+            <div class="row mt-3">
+                <div class="col-sm-12">
+                    <div class="back-cont">
+                        <div class="d-flex align-items-center">
+                            <label for="lblSexo" class="me-2" style="min-width: 165px; color: blue; font-weight: bold;">Condicion de Salud:</label>
+                            
+                            <nz-radio-group formControlName="salud">
+                                <label nz-radio  nzValue="Sano">Sano</label>
+                                <label nz-radio  nzValue="Invalido">Ìnvalido</label>
+                              </nz-radio-group>
+                           
+                        </div>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-sm-12">
+                    <div style=" padding: 15px; padding-left: 950px; border-radius: 5px;">
+                        <button nz-button nzType="primary" (click)="onSiguiente()">Siguiente</button>
+                    </div>    
+                </div>
+            </div>
+    </form>
 </div>

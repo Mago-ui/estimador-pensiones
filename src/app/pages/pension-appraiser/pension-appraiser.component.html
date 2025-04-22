@@ -1,17 +1,83 @@
 <div class="m-2">
     <div class="appraiser-container">
         <div class="appraiser-container-one">
+            <div class="pension">Estimador de Pensión</div>
+
             <div (click)="HandleChangeContent(1)"  [ngClass]="{ 'active': value === 1 }" class="appraiser-container-item radius-top b1">
-                <div>Mis datos</div>
-                <div>Mis datos personales</div>
+               <div class="position-number" [ngClass]="{ 'active-color': value === 1 }" >1</div>
+                
+               <div><img class="size-img" src="../../../assets/png/person_13924070.png" ></div>
+               
+               <div>
+                    <div class="size-text">
+                        <div class="color">Mis Datos</div>
+                        <div>Mis Datos personales</div>
+                   </div>
+                   <div>
+                </div>
+                </div>
+               
+               
             </div> 
-            <div (click)="HandleChangeContent(2)"  [ngClass]="{ 'active': value === 2 }" class="appraiser-container-item b1">mis datos</div> 
-            <div (click)="HandleChangeContent(3)"  [ngClass]="{ 'active': value === 3 }" class="appraiser-container-item b1">mis datos</div> 
-            <div (click)="HandleChangeContent(4)"  [ngClass]="{ 'active': value === 4 }" class="appraiser-container-item b1">mis datos</div> 
-            <div (click)="HandleChangeContent(5)"  [ngClass]="{ 'active': value === 5 }" class="appraiser-container-item radius-bottom">mis datos</div> 
+            <div (click)="HandleChangeContent(2)"  [ngClass]="{ 'active': value === 2 }" class="appraiser-container-item b1">
+                <div class="position-number-med" [ngClass]="{ 'active-color': value === 2 }" >2</div>
+                
+                <div><img class="size-img" src="../../../assets/png/piggy-bank_8299143.png" ></div>
+                
+                <div>
+                     <div class="size-text">
+                         <div class="color">Mis Ahorros</div>
+                         <div>Los ahorros que tengo en mi AFP</div>
+                    </div>
+                    <div>
+                     <span>Tengo s/. 153,500.00</span>
+                 </div>
+                 </div>
+            </div> 
+            <div (click)="HandleChangeContent(3)"  [ngClass]="{ 'active': value === 3 }" class="appraiser-container-item b1">
+                <div class="position-number-med" [ngClass]="{ 'active-color': value === 3 }" >3</div>
+                
+                <div><img class="size-img" src="../../../assets/png/family_1416832.png" ></div>
+                
+                <div>
+                     <div class="size-text">
+                         <div class="color">Mi Familia</div>
+                         <div>Las personas que recibirían una pensión si falleciera</div>
+                    </div>
+                 
+                 </div>
+            </div> 
+            <div (click)="HandleChangeContent(4)"  [ngClass]="{ 'active': value === 4 }" class="appraiser-container-item b1">
+                <div class="position-number-med" [ngClass]="{ 'active-color': value === 4 }" >4</div>
+                
+                <div><img class="size-img" src="../../../assets/png/bar-chart_1621670.png" ></div>
+                
+                <div>
+                     <div class="size-text">
+                         <div class="color">Rentabilidad</div>
+                         <div>Fondo donde voy a colocar mis ahorros desde hoy hasta que me jubile.</div>
+                    </div>
+                   
+                 </div>
+            </div> 
+            <div (click)="HandleChangeContent(5)"  [ngClass]="{ 'active': value === 5 }" class="appraiser-container-item radius-bottom">
+                <div class="position-number-med" [ngClass]="{ 'active-color': value === 5}" >5</div>
+                
+                <div><img class="size-img" src="../../../assets/png/clipboard_792088.png" ></div>
+                
+                <div>
+                     <div class="size-text">
+                         <div class="color">Resultados</div>
+                         <div>Resultados de estimación de pensión, donde podré observar mis beneficios.</div>
+                    </div>
+                    
+                 </div>
+            </div> 
         </div>
-        <ng-template [ngIf]="value == 1">
-            <app-my-data class="content"></app-my-data>
-        </ng-template>
+
+        
+            <app-my-data *ngIf="value == 1" class="content"></app-my-data>
+            <app-my-savings *ngIf="value == 2" class="content"></app-my-savings>
+            <app-my-family *ngIf="value == 3" class="content"></app-my-family>
     </div>
 </div>

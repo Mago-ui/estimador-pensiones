@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MyDataComponent } from './my-data.component';
+import { MyFamilyComponent } from './my-family.component';
 
-describe('MyDataComponent', () => {
-  let component: MyDataComponent;
-  let fixture: ComponentFixture<MyDataComponent>;
+describe('MyFamilyComponent', () => {
+  let component: MyFamilyComponent;
+  let fixture: ComponentFixture<MyFamilyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MyDataComponent]
+      imports: [MyFamilyComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MyDataComponent);
+    fixture = TestBed.createComponent(MyFamilyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

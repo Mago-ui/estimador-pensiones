@@ -1,8 +1,7 @@
 .appraiser-container {
-    display: grid;
-    grid-template-columns: 26% 1fr;
-    height: 100vh;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 22% 1fr;
+  padding-top: 79px;
   }
 
 .appraiser-container-item{
@@ -10,9 +9,21 @@
   -webkit-box-shadow: inset -15px -4px 13px -4px rgba(188,189,194,0.13);
   -moz-box-shadow: inset -15px -4px 13px -4px rgba(188,189,194,0.13);
   box-shadow: inset -15px -4px 13px -4px rgba(188,189,194,0.13);
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
   
 }
 
+.pension{
+  position: absolute;
+  top: -55px;
+  left: 2rem;
+  color: blue;
+  font-weight: 700;
+  font-size: 21px;
+}
 
 .appraiser-container-one{
   border-top-left-radius: 24px;
@@ -21,6 +32,8 @@
   border-left: 1px solid #e6e6e6;
   border-bottom: 1px solid #b3b3b34f;
   height: max-content;
+  position: relative;
+  margin-top:7rem
 }
 
 .radius-top{
@@ -34,13 +47,65 @@
 .content{
   border: 2px solid #d9d9d991;
   border-radius: 5px;
-  height: 95vh;
+  // height: 95vh;
 }
 
 .b1{
-  border-bottom: 1px solid #ebebeb91;
+  border-bottom: 1px solid rgb(235 235 235);
 }
 
 .active{
-  background: #c5c8ff;
+  box-shadow: rgb(0 0 0 / 10%) -9px 3px 8px;
+  border-right: 1px solid rgb(255 255 255 / 0%);
+  width: 100.7%;
+  z-index: 3000;
+  background: white;
+}
+.active-color{
+  background: #3dcfffb0 !important;
+}
+.active-color-med{
+  border-top-left-radius: 1px;
+  background: #3dcfffb0 !important;
+}
+
+.position-number{
+  position: absolute;
+  background: #a6a6a6;
+  color: white;
+  border-top-left-radius: 31px;
+  left: 1px;
+  width: 8%;
+  border-bottom-right-radius: 18px;
+  padding: 6px;
+  font-size: 11px;
+  height: 26px;
+  top: 0;
+}
+.position-number-med{
+  position: absolute;
+  background: #a6a6a6;
+  color: white;
+  border-top-left-radius: 1px;
+  left: 1px;
+  width: 8%;
+  border-bottom-right-radius: 18px;
+  padding: 6px;
+  font-size: 11px;
+  height: 26px;
+  top: 0;
+}
+
+.size-img{
+  width: 57px;
+  padding-right: 12px;
+}
+
+.color{
+  color: blue;
+  font-weight: 600;
+}
+
+.size-text{
+  font-size: 14px;
 }
