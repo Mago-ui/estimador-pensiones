@@ -14,7 +14,7 @@
           <div class="row mt-3">
                 <div class="col-sm-12">
                     <div class="back-cont">
-                        <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center" >
                             <label for="lblNombres" class="me-2" style="min-width: 150px; color: blue; font-weight: bold;">Nombres y Apellidos:</label>
                             <input  formControlName="Nombre" type="text" class="custom-input" />
                         </div>
@@ -26,8 +26,9 @@
                 <div class="col-sm-12">
                     <div style=" padding: 15px; border-radius: 5px;">
                         <div class="d-flex align-items-center">
-                            <label for="lblNacimiento" class="me-2" style="min-width: 165px; color: blue; font-weight: bold;">Fecha Nacimiento:</label>
+                            <label for="lblNacimiento" class="me-2" style="min-width: 165px; color: blue; font-weight: bold;"><p>Fecha Nacimiento:</p></label>
                             <nz-date-picker
+                            style="width: 20% !important;"
                             formControlName="fechaCumple"
                             class="custom-picker custom-disabled"
                             class="custom-select w-100 "
@@ -35,7 +36,7 @@
                             ></nz-date-picker>
 
                             <label for="lblEdad" class="me-2" style="min-width: 165px; color: blue; font-weight: bold; margin-left: 20px;">
-                              Hoy tengo {{dataForm.get('edadToday')?.value}} años
+                              <p>Hoy tengo {{dataForm.get('edadToday')?.value}} años</p>
                             </label>
                         </div>
                     </div>    
@@ -52,16 +53,17 @@
                       <nz-row nzGutter="8" style="flex: 1;">
                         <nz-col nzSpan="12">
                           <nz-slider 
-                            [nzMin]="1" 
-                            [nzMax]="20" 
+                            [nzMin]="43" 
+                            [nzMax]="100" 
                             [(ngModel)]="edadRetiro"  
-                            formControlName="edadRetiro">
+                            formControlName="edadRetiro"
+                            nzTooltipVisible="always">
                           </nz-slider>
                         </nz-col>
                         <nz-col nzSpan="4">
                           <nz-input-number 
-                            [nzMin]="1" 
-                            [nzMax]="20" 
+                            [nzMin]="43" 
+                            [nzMax]="100" 
                             [(ngModel)]="edadRetiro"  
                             formControlName="edadRetiro">
                           </nz-input-number>
@@ -109,7 +111,7 @@
 
             <div class="row mt-3">
                 <div class="col-sm-12">
-                    <div style=" padding: 15px; padding-left: 950px; border-radius: 5px;">
+                    <div class="button">
                         <button nz-button nzType="primary" (click)="onSiguiente()">Siguiente</button>
                     </div>    
                 </div>

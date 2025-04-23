@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { NzGridModule } from 'ng-zorro-antd/grid';
@@ -9,6 +8,7 @@ import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzTableModule } from 'ng-zorro-antd/table';
+import { CommonModule } from '@angular/common';
 
 interface MyFormModel {
   beneficio: FormControl<any>;
@@ -20,20 +20,10 @@ interface MyFormModel {
   salud: FormControl<string>;
 }
 
-interface Person {
-  key: string;
-  name: string;
-  relation: string;
-  year: string;
-  condition: string;
-}
-
-
-
 
 @Component({
-  selector: 'app-my-family',
-  imports: [    ReactiveFormsModule,
+  selector: 'app-my-profitability',
+  imports: [ReactiveFormsModule,
     NzSelectModule,
     NzGridModule,
     CommonModule,
@@ -43,38 +33,14 @@ interface Person {
     NzCheckboxModule,
     NzTableModule,
     NzDividerModule],
-  templateUrl: './my-family.component.html',
-  styleUrl: './my-family.component.scss'
+  templateUrl: './my-profitability.component.html',
+  styleUrl: './my-profitability.component.scss'
 })
-
-
-export class MyFamilyComponent {
+export class MyProfitabilityComponent {
   dataForm!: FormGroup<MyFormModel>;
   edadRetiro: number = 43; 
   mostrarAlerta: boolean = false;
-  listOfData: Person[] = [
-    {
-      key: '1',
-      name: 'MARIA, TELLO',
-      relation: 'conyugue',
-      year: '38 años',
-      condition: 'Sano'
-    },
-    {
-      key: '2',
-      name: 'MARIA, TELLO',
-      relation: 'conyugue',
-      year: '38 años',
-      condition: 'Sano'
-    },
-    {
-      key: '3',
-      name: 'MARIA, TELLO',
-      relation: 'conyugue',
-      year: '38 años',
-      condition: 'Sano'
-    }
-  ];
+ 
 
   ngOnInit(): void {
     this.dataForm = new FormGroup<MyFormModel>({
@@ -83,7 +49,7 @@ export class MyFamilyComponent {
       edadToday: new FormControl(0, { nonNullable: true }),
       anio: new FormControl(0, { nonNullable: true }),
       edadRetiro: new FormControl(1, { nonNullable: true }),
-      genero: new FormControl('Masculino', { nonNullable: true }),
+      genero: new FormControl('', { nonNullable: true }),
       salud: new FormControl('Sano', { nonNullable: true })
     });
 

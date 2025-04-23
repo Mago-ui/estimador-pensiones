@@ -41,7 +41,7 @@ interface MyFormModel {
 export class MyDataComponent implements OnInit{
 
   dataForm!: FormGroup<MyFormModel>;
-  edadRetiro: number = 1; 
+  edadRetiro: number = 43; 
 
   mostrarAlerta: boolean = false;
 

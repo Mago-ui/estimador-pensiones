@@ -1,0 +1,118 @@
+<div class="my-data">
+    <form [formGroup]="dataForm" class="m-4">
+       
+          
+          <div class="row mt-3 m-lg-1">
+                <div class="col-sm-12">
+                    <div>
+                        <div class="d-flex align-items-center" >
+                            <label for="lblNombres" class="me-2" style="color: blue; font-weight: bold;">Elija la opcion que más se ajuste a sus planes</label>
+                           
+                        </div>
+                    </div>    
+                </div>
+           </div>
+
+           <nz-radio-group formControlName="genero">
+            <div class="row mt-3">
+              <div class="col-sm-12">
+                <label nz-radio nzValue="Masculino" class="w-100 back-cont">
+                  <div>
+                    <p class="mb-2">Perfil Agresivo</p>
+                    <div class="d-flex align-items-center ">
+                      <div class="w-100">
+                        <p>Fondo: 3</p>
+                        <p>Rentabilidad: 9.00%</p>
+                       
+                        <div class="renta">
+                          <span>43</span>
+                          <span>60</span>
+                        </div>
+                      </div>
+                   
+                      <div style="width: 31%;padding-left: 18px;">
+                        <p>Fondo: 2</p>
+                        <p>Rentabilidad: 9.00%</p>
+                        <div class="renta-d">
+                          <span>60</span>
+                          <span>65</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          
+            <div class="row mt-3">
+              <div class="col-sm-12">
+                <label nz-radio nzValue="Femenino" class="w-100 back-cont">
+                  <div>
+                    <p class="mb-2">Perfil Conservador</p>
+                    <div class="d-flex align-items-center ">
+                        <div class="w-100">
+                          <p>Fondo: 2</p>
+                          <p>Rentabilidad: 9.00%</p>
+                         
+                          <div class="renta">
+                            <span>43</span>
+                            <span>60</span>
+                          </div>
+                        </div>
+                     
+                        <div style="width: 31%;padding-left: 18px;">
+                          <p>Fondo: 1</p>
+                          <p>Rentabilidad: 9.00%</p>
+                          <div class="renta-d">
+                            <span>60</span>
+                            <span>65</span>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-sm-12">
+                  <label nz-radio nzValue="Moderado" class="w-100 back-cont">
+                    <div >
+                      <p class="mb-2">Perfil Moderado</p>
+                      <div class="d-flex align-items-center ">
+                        <div class="w-100">
+                          <p>Fondo: 3</p>
+                          <p>Rentabilidad: 9.00%</p>
+                         
+                          <div class="renta">
+                            <span>43</span>
+                            <span>60</span>
+                          </div>
+                        </div>
+                     
+                        <div style="width: 31%;padding-left: 18px;">
+                          <p>Fondo: 3</p>
+                          <p>Rentabilidad: 9.00%</p>
+                          <div class="renta-d">
+                            <span>60</span>
+                            <span>65</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+          </nz-radio-group>
+
+          <button class="b-option">Personalizar mi opción</button>
+
+            <div class="row mt-3">
+                <div class="col-sm-12">
+                    <div class="button">
+                        <button nz-button nzType="primary" >Ver Resultados</button>
+                    </div>    
+                </div>
+            </div>
+    </form>
+</div>

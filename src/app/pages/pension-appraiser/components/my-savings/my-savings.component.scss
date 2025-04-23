@@ -3,3 +3,21 @@
     font-weight: bold;
     font-size: 15px;
   }
+
+  .back-cont{
+    background-color: #e6f0ff; 
+    border: 1px solid #b3d1ff;
+    padding: 28px; 
+    border-radius: 5px;
+}
+
+.back-des{
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: #e6f0ff;
+  border: 1px solid #b3d1ff !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

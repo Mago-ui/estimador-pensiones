@@ -1,0 +1,54 @@
+<div class="container p-d">
+    <nz-tabset nzType="card">
+      <nz-tab nzTitle="Jubilación con 65 a más">
+        
+        <nz-collapse  style="background-color: #e6f0ff;border: 1px solid #b3d1ff;width: 100%;">
+            <nz-collapse-panel [nzHeader]="customHeader" [nzActive]="true" [nzShowArrow]="true" >
+                
+               Hoy a los 43 años tengo S/. 153,500.00 y a los 65 años tendré S/. 636,827.00
+        
+            </nz-collapse-panel>
+        </nz-collapse>
+        <br>
+        <nz-collapse  style="background-color: #e6f0ff;border: 1px solid #b3d1ff;width: 100%;">
+            <nz-collapse-panel [nzHeader]="customHeader2" [nzActive]="true" [nzShowArrow]="true" >
+                
+               RETIRO PROGRAMADO
+        
+            </nz-collapse-panel>
+        </nz-collapse>
+
+        <br>
+        <nz-collapse  style="background-color: #e6f0ff;border: 1px solid #b3d1ff;width: 100%;">
+            <nz-collapse-panel [nzHeader]="customHeader3" [nzActive]="true" [nzShowArrow]="true" >
+                
+               Ud. Tiene un Excedente de S/.39,273.12 que podría retirar al momento de jubilarse.
+               Si deseas retirar este monto disponible tu pensión en retiro Programado será S/.3,490.17
+        
+            </nz-collapse-panel>
+        </nz-collapse>
+      </nz-tab>
+  
+      <nz-tab nzTitle="Jubilación antes de 65">
+        Content of Tab Pane 2
+      </nz-tab>
+  
+      <nz-tab nzTitle="Supuestos del Cálculo">
+        Content of Tab Pane 3
+      </nz-tab>
+    </nz-tabset>
+  </div>
+ 
+
+<ng-template #customHeader>
+<span class="cabecera-azul">Ahorros</span>
+</ng-template> 
+
+<ng-template #customHeader2>
+    <span class="cabecera-azul">Modalidades de Pensión</span>
+</ng-template>
+
+<ng-template #customHeader3>
+    <span class="cabecera-azul">Excedente de Pensión</span>
+</ng-template> 
+    

@@ -39,3 +39,37 @@
   .b-text{
     font-size: 12px;
   }
+
+  ::ng-deep .ant-radio-group{
+    width: 100%;
+  }
+
+  ::ng-deep span.ant-radio + *{
+    width: 100%;
+  }
+
+  .renta{
+    background: #1890ff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    border-radius: 14px;
+  }
+
+  .renta-d{
+    background: rgba(61, 207, 255, 0.6901960784);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    border-radius: 14px;
+  }
+
+  .b-option{
+    background-color: #e6f0ff;
+    border: 1px solid #b3d1ff;
+    padding: 8px;
+    margin-top: 12px;
+    border-radius: 4px;
+  }
