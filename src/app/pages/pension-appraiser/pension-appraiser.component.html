@@ -50,6 +50,18 @@
             <div (click)="HandleChangeContent(4)"  [ngClass]="{ 'active': value === 4 }" class="appraiser-container-item b1">
                 <div class="position-number-med" [ngClass]="{ 'active-color': value === 4 }" >4</div>
                 
+                <div><img class="size-img" src="../../../assets/png/family_1416832.png" ></div>
+                
+                <div>
+                     <div class="size-text">
+                         <div class="color">Sistema de Contactos</div>
+                    </div>
+                 
+                 </div>
+            </div> 
+            <div (click)="HandleChangeContent(5)"  [ngClass]="{ 'active': value === 5 }" class="appraiser-container-item b1">
+                <div class="position-number-med" [ngClass]="{ 'active-color': value === 5 }" >5</div>
+                
                 <div><img class="size-img" src="../../../assets/png/bar-chart_1621670.png" ></div>
                 
                 <div>
@@ -60,8 +72,8 @@
                    
                  </div>
             </div> 
-            <div (click)="HandleChangeContent(5)"  [ngClass]="{ 'active': value === 5 }" class="appraiser-container-item radius-bottom">
-                <div class="position-number-med" [ngClass]="{ 'active-color': value === 5}" >5</div>
+            <div (click)="HandleChangeContent(6)"  [ngClass]="{ 'active': value === 6 }" class="appraiser-container-item radius-bottom">
+                <div class="position-number-med" [ngClass]="{ 'active-color': value === 6}" >6</div>
                 
                 <div><img class="size-img" src="../../../assets/png/clipboard_792088.png" ></div>
                 
@@ -73,13 +85,17 @@
                     
                  </div>
             </div> 
+            
+
         </div>
 
         
             <app-my-data *ngIf="value == 1" class="content"></app-my-data>
             <app-my-savings *ngIf="value == 2" class="content"></app-my-savings>
             <app-my-family *ngIf="value == 3" class="content"></app-my-family>
-            <app-my-profitability *ngIf="value == 4" class="content"></app-my-profitability>
-            <app-my-result *ngIf="value == 5" class="content"></app-my-result>
+            <app-contact-system *ngIf="value == 4" class="content"></app-contact-system>
+            <app-my-profitability *ngIf="value == 5" class="content"></app-my-profitability>
+            <app-my-result *ngIf="value == 6" class="content"></app-my-result>
+            
     </div>
 </div>
