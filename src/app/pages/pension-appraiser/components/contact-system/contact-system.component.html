@@ -1,1 +1,294 @@
-<p>contact-system works!</p>
+<div class="m-2">
+    <div class="contactsystem-container">
+        <div class="row ">
+            <div class="col-sm-11">
+                <div class="back-cont">
+                    <div class="d-flex align-items-center">
+                        <label for="lblNombres" class="me-2">Nombres y Apellidos:</label>
+                        <input formControlName="nombresApellidos" type="text" class="custom-input"/>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-sm-11">
+                <div class="back-cont">
+                    <div class="d-flex align-items-center">
+                        <label for="lblNumCarpeta" class="nCarpeta">Número de Carpeta:</label>
+                        <input formControlName="numCarpeta" type="text" class="custom-input"/>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-sm-11">
+                <div class="back-cont">
+                    <div class="d-flex align-items-center">
+                        <label for="lblSituacion" class="me-2">Situación del afiliado:</label>
+                        <nz-select formControlName="selectSituacion" class="selectAfiliado" >
+                            <nz-option nzValue="Vivo" nzLabel="Vivo"></nz-option>
+                            <nz-option nzValue="Fallecido" nzLabel="Fallecido"></nz-option>
+                        </nz-select>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-sm-11">
+                <div class="back-cont">
+                    <div class="d-flex align-items-center">
+                        <label for="lblCondicion" class="condicion_salud">Condición de salud:</label>
+                        <nz-select formControlName="selectCondicion" class="select">
+                            <nz-option nzValue="Sano" nzLabel="Sano"></nz-option>
+                            <nz-option nzValue="Invalido" nzLabel=" Inválido"></nz-option>
+                        </nz-select>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-sm-11">
+                <div class="back-cont">
+                    <div class="d-flex align-items-center">
+                        <label for="lblIncorporacion" class="incorporacion_SNP">Fecha Incorporación al SNP:</label>
+                        <nz-date-picker style="width: 40% !important; margin-top: 2px;" formControlName="incorporacionSNP" class="custom-picker custom-disabled" class="custom-select w-100 "></nz-date-picker>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-sm-11">
+                <div class="back-cont">
+                    <div class="d-flex align-items-center">
+                        <label for="lblFinRelacionLaboral" class="relacion_laboral">Fecha Fin Relación  laboral:</label>
+                        <nz-date-picker style="width: 40% !important; margin-top: 2px;" formControlName="FinRelacionLaboral" class="custom-picker custom-disabled" class="custom-select w-100 "></nz-date-picker>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="col-sm-11">
+                <div class="back-cont">
+                    <div class="d-flex align-items-center">
+                        <label for="lblBono" class="me-2">Bono de Reconocimiento:</label>
+                        <nz-select formControlName="selectBono" class="selectBono" >
+                            <nz-option nzValue="1992" nzLabel="Bono 1992"></nz-option>
+                            <nz-option nzValue="1996" nzLabel="Bono 1996"></nz-option>
+                            <nz-option nzValue="2001" nzLabel="Bono 2001"></nz-option>
+                        </nz-select>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="col-sm-11">
+                <div class="back-cont">
+                    <div class="d-flex align-items-center">
+                        <label for="lblretiroCIC" class="labelRetiroCIC">Disposición o retiro de recursos de la CIC:</label>
+                        <nz-select formControlName="selectRetiroCIC" class="selectRetiroCIC" >
+                            <nz-option nzValue="SI" nzLabel="SI"></nz-option>
+                            <nz-option nzValue="NO" nzLabel="NO"></nz-option>
+                        </nz-select>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-sm-11">
+                <div class="back-cont">
+                    <div class="d-flex align-items-center">
+                        <label for="lblActivadaRiesgo" class="labelRiesgo">Actividad de riesgo:</label>
+                        <nz-select formControlName="selectActivadaRiesgo" class="selectActivadaRiesgo" >
+                            <nz-option nzValue="SI" nzLabel="SI"></nz-option>
+                            <nz-option nzValue="NO" nzLabel="NO"></nz-option>
+                        </nz-select>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-sm-11">
+                <div class="back-cont">
+                    <div class="d-flex align-items-center">
+                        <label for="lblExposicionriesgo" class="labelExposicionriesgo">Numero años de exposicion al riesgo:</label>
+                        <nz-select formControlName="selectExposicionriesgo" class="selectExposicionriesgo" >
+                            <nz-option nzValue="1" nzLabel="1"></nz-option>
+                            <nz-option nzValue="2" nzLabel="2"></nz-option>
+                            <nz-option nzValue="3" nzLabel="3"></nz-option>
+                            <nz-option nzValue="4" nzLabel="4"></nz-option>
+                        </nz-select>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-sm-11">
+                <div class="back-cont">
+                    <div class="d-flex align-items-center">
+                        <label for="lblRegimenGenerico" class="labelRegimenGenerico">Aportes complementarios regimen generico:</label>
+                        <nz-select formControlName="selectRegimenGenerico" class="selectRegimenGenerico" >
+                            <nz-option nzValue="SI" nzLabel="SI"></nz-option>
+                            <nz-option nzValue="NO" nzLabel="NO"></nz-option>
+                        </nz-select>
+                    </div>
+                </div>    
+            </div>
+           
+            <div class="col-sm-11">
+                <div class="d-flex back-cont">
+                    <div class="d-flex align-items-center">
+                        <label for="lblPromRemuneraciones" class="labelPromRemuneraciones">Promedio Remuneraciones(120 meses):</label>
+                        <button nz-button [nzType]="'primary'" (click)="showModal()" class="buttonModal"><span>...</span></button>
+                        <nz-modal [(nzVisible)]="isVisible" nzTitle="Remuneraciones" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+                        <ng-container *nzModalContent>
+                            <p>Content one</p>
+                            <p>Content two</p>
+                            <p>Content three</p>
+                        </ng-container>
+                        </nz-modal>
+                        <div class="contenedor-prom">
+                            <input formControlName="promRemuneraciones" type="text" class="custom-input"/>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-sm-11">
+                <div class="back-cont">
+                    <div class="d-flex align-items-center">
+                        <label for="lblTasasAporte" class="labelTasasAporte">Diferencia de Tasas de aporte (SNP vs SPP):</label>
+                        <nz-select formControlName="selectTasasAporte" class="selectTasasAporte" >
+                            <nz-option nzValue="SI" nzLabel="SI"></nz-option>
+                            <nz-option nzValue="NO" nzLabel="NO"></nz-option>
+                        </nz-select>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-sm-11">
+                <div class="back-cont">
+                    <div class="d-flex align-items-center">
+                        <label for="lblDInvalidez" class="labelDInvalidez">Dictamen de invalidez:</label>
+                        <nz-select formControlName="selectDInvalidez" class="selectDInvalidez" >
+                            <nz-option nzValue="SI" nzLabel="SI"></nz-option>
+                            <nz-option nzValue="NO" nzLabel="NO"></nz-option>
+                        </nz-select>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-sm-11">
+                <div class="back-cont">
+                    <div class="d-flex align-items-center">
+                        <label for="lblPorcInvalidez" class="labelPorcInvalidez">Porcentaje invalidez:</label>
+                        <input formControlName="PorcentajeInvalidez" type="text" class="custom-input"/>
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <div>
+            <div class="row ">
+                <div class="col-sm-11">
+                    <div class="back-cont">
+                        <div class="d-flex align-items-center">
+                            <label for="lblCuspp" class="cuspp">CUSPP:</label>
+                            <input formControlName="Cuspp" type="text" class="custom-input"/>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-sm-11">
+                    <div class="back-cont">
+                        <div class="d-flex align-items-center">
+                            <label for="lblNacimiento" class="NacimientoFecha">Fecha de Nacimiento:</label>
+                            <nz-date-picker style="width: 40% !important; margin-top: 2px;" formControlName="FNacimiento" class="custom-picker custom-disabled" class="custom-select w-100 "></nz-date-picker>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-sm-11">
+                    <div class="back-cont">
+                        <div class="d-flex align-items-center">
+                            <label for="lblFallecimiento" class="FallecimientoFecha">Fecha de Fallecimiento:</label>
+                            <nz-date-picker style="width: 40% !important; margin-top: 2px;" formControlName="FFallecimiento" class="custom-picker custom-disabled" class="custom-select w-100 "></nz-date-picker>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-sm-11">
+                    <div class="back-cont">
+                        <div class="d-flex align-items-center">
+                            <label for="lblGenero" class="Genero">Genero:</label>
+                            <nz-select formControlName="selectGenero" class="selectGenero" >
+                                <nz-option nzValue="Masculino" nzLabel="Masculino"></nz-option>
+                                <nz-option nzValue="Femenino" nzLabel="Femenino"></nz-option>
+                            </nz-select>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-sm-11">
+                    <div class="back-cont">
+                        <div class="d-flex align-items-center">
+                            <label for="lblFechaCalculo" class="FechaCalculo">Fecha Evaluación / Cálculo:</label>
+                            <nz-date-picker style="width: 40% !important; margin-top: 2px;" formControlName="FechaCalculo" class="custom-picker custom-disabled" class="custom-select w-100 "></nz-date-picker>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-sm-11">
+                    <div class="back-cont">
+                        <div class="d-flex align-items-center"> 
+                            <label for="lblFechaSPP" class="FechaSPP">Fecha Afiliación al SPP:</label>
+                            <nz-date-picker style="width: 40% !important; margin-top: 2px;" formControlName="FechaAfiliacionSPP" class="custom-picker custom-disabled" class="custom-select w-100 "></nz-date-picker>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-sm-11">
+                    <div class="back-cont">
+                        <div class="d-flex align-items-center"> 
+                            <label for="lblSaldoCIC" class="SaldoCIC"> Saldo actual CIC S/.  :</label>
+                            <input formControlName="SaldoCIC" type="text" class="custom-input"/>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-sm-11">
+                    <div class="back-cont">
+                        <div class="d-flex align-items-center"> 
+                            <label for="lblValorNominal" class="ValorNominal"> Valor nominal S/.  :</label>
+                            <input formControlName="ValorNominal" type="text" class="custom-input"/>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-sm-11">
+                    <div class="back-cont">
+                        <div class="d-flex align-items-center">
+                            <label for="lblAportesRMV" class="AportesRMV">Aportes realizados en base a la RMV:</label>
+                            <nz-select formControlName="selectAportesRMV" class="selectAportesRMV" >
+                                <nz-option nzValue="SI" nzLabel="SI"></nz-option>
+                                <nz-option nzValue="NO" nzLabel="NO"></nz-option>
+                            </nz-select>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="col-sm-11">
+                    <div class="back-cont">
+                        <div class="d-flex align-items-center">
+                            <label for="lblTipoActividad" class="TipoActividad">Tipo de actividad:</label>
+                            <nz-select formControlName="selectTipoActividad" class="selectTipoActividad" >
+                                <nz-option nzValue="Actividad1" nzLabel="Actividad 1"></nz-option>
+                                <nz-option nzValue="Actividad2" nzLabel="Actividad 2"></nz-option>
+                                <nz-option nzValue="Actividad3" nzLabel="Actividad 3"></nz-option>
+                                <nz-option nzValue="Actividad4" nzLabel="Actividad 4"></nz-option>
+                            </nz-select>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-sm-11">
+                    <div class="back-cont">
+                        <div class="d-flex align-items-center">
+                            <label for="lblNumeroAportes" class="NumeroAportes">Aportes complementarios numero de aportes:</label>
+                            <nz-select formControlName="selectNumeroAportes" class="selectNumeroAportes" >
+                                <nz-option nzValue="Aporte1" nzLabel="Aporte 1"></nz-option>
+                                <nz-option nzValue="Aporte2" nzLabel="Aporte 2"></nz-option>
+                                <nz-option nzValue="Aporte3" nzLabel="Aporte 3"></nz-option>
+                                <nz-option nzValue="Aporte4" nzLabel="Aporte 4"></nz-option>
+                            </nz-select>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-sm-11">
+                    <div class="back-cont">
+                        <div class="d-flex align-items-center">
+                            <label for="lblTipoInvalidez" class="TipoInvalidez">Tipo de invalidez:</label>
+                            <nz-select formControlName="selectTipoInvalidez" class="selectTipoInvalidez" >
+                                <nz-option nzValue="Tipo1" nzLabel="Tipo 1"></nz-option>
+                                <nz-option nzValue="Tipo2" nzLabel="Tipo 2"></nz-option>
+                                <nz-option nzValue="Tipo3" nzLabel="Tipo 3"></nz-option>
+                                <nz-option nzValue="Tipo4" nzLabel="Tipo 4"></nz-option>
+                            </nz-select>
+                        </div>
+                    </div>    
+                </div>
+
+            </div>   
+        </div>
+   
+    </div>
+</div>

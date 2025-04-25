@@ -1,0 +1,202 @@
+.contactsystem-container {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+}
+  
+.me-2{
+    padding-left: 10px;
+}
+
+.nCarpeta{
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.custom-input{
+    width: 100%;
+}
+
+.col-sm-11{
+    margin-top: 20px;
+}
+
+.condicion_salud{
+    padding-right: 20px;
+    padding-left: 8px;
+}
+
+.incorporacion_SNP{
+    padding-right: 20px;
+    padding-left: 8px;
+}
+
+.relacion_laboral{
+    padding-right: 30px;
+    padding-left: 8px;
+}
+
+.select{
+    padding-left: 60px;
+    width: 230px;
+}
+
+.selectAfiliado{
+    padding-left: 60px;
+    width: 227px;
+}
+
+.selectBono{
+    padding-left: 26px;
+    width: 220px;
+    
+}
+
+.labelRetiroCIC{
+    padding-left: 6px;
+    padding-right: 20px;
+    width: 230px;
+}
+
+.selectRetiroCIC{
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100px;
+    box-sizing: border-box;
+}
+
+.labelRiesgo{
+    padding-left: 10px;
+    padding-right: 80px;
+}
+
+.selectActivadaRiesgo{
+    width: 100px;
+}
+
+.labelExposicionriesgo{
+    width: 220px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.selectExposicionriesgo{
+    width: 110px;
+    padding-left: 10px;
+}
+
+.labelRegimenGenerico{
+    width: 220px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.selectRegimenGenerico{
+    width: 110px;
+    padding-left: 10px;
+}
+
+.labelPromRemuneraciones{
+    width: 230px;
+    padding-left: 10px;
+    padding-right: 80px;
+    
+}
+
+.contenedor-prom{
+    padding-left: 20px;
+}
+
+.labelTasasAporte{
+    width: 230px;
+    padding-left: 10px;
+}
+
+.selectTasasAporte{
+    width: 110px;
+}
+
+.labelDInvalidez{
+    padding-left: 10px;
+    padding-right: 60px;
+}
+
+.selectDInvalidez{
+    width: 110px;
+}
+
+.labelPorcInvalidez{
+    width: 400px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.cuspp{
+    width: 230px;
+    padding-right: 40px;
+}
+
+.NacimientoFecha{
+    width: 170px;
+}
+
+.FallecimientoFecha{
+    width: 170px;
+}
+
+.Genero{
+    width: 170px;
+    padding-right: 20px;
+}
+
+.selectGenero{
+    width: 210px;
+}
+
+.FechaCalculo{
+    width: 170px;
+}
+
+.FechaSPP{
+    width: 170px;
+    padding-right: 20px;
+}
+
+.SaldoCIC{
+    width: 260px;
+}
+
+.ValorNominal{
+    width: 260px;
+}
+
+.AportesRMV{
+    width: 180px;
+}
+
+.selectAportesRMV{
+    width: 120px;
+}
+
+.TipoActividad{
+    width: 180px;
+}
+
+.selectTipoActividad{
+    width: 120px;
+}
+
+.NumeroAportes{
+    width: 180px;
+}
+
+.selectNumeroAportes{
+    width: 120px;
+}
+
+.TipoInvalidez{
+    width: 180px;
+}
+
+.selectTipoInvalidez{
+    width: 120px;
+}
